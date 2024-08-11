@@ -1,0 +1,12 @@
+## ctr + alt + R makes a send request
+# if there are multiple urls, highliht the url you want to make a request and then make a request if
+#you wanted to make a request to it
+#press ctr + shift + P for opening all commands for rest client, also type rest first to the search field
+
+POST http://localhost:3001/api/persons/2
+Content-Type: application/json
+
+{
+  "name": "KK",
+  "number": "1233443-456-56890"
+}

@@ -1,0 +1,11 @@
+
+
+.success {
+    color: rgb(2, 45, 2);
+    font-style: italic;
+    font-size: 16px;
+    border-color: rgb(2, 73, 2);
+    border: 3px solid rgb(128, 115, 0);
+    background-color: lightgreen;
+}
+
