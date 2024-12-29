@@ -5,7 +5,7 @@ dotenv.config();
 
 //const baseUrl = import.meta.env.VITE_BASE_URL || '/api/persons';
 const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
-const api = '/api/persons'
+const api = '/api/persons';
 
 const getAll = () => {
   console.log(api)
