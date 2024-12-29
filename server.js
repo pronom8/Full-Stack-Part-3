@@ -30,6 +30,7 @@ app.get('/api/persons', async (req, res) => {
     try {
         const persons = await getDataFromFile();
         res.json(persons);
+        console.log('/api/persons', 'the app.get method seems to work just fine')
     } catch (error) {
         res.status(500).json({ error: 'Failed to read data from file' });
     }
