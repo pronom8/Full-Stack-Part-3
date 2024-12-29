@@ -74,7 +74,7 @@ const App = () => {
       const personObject = {
         name: newName,
         number: newNumber,
-        id: (persons.length + 1).toString() // Convert the integer to a string
+        id: (persons.length + 1).toString() 
       };
 
       sercom
