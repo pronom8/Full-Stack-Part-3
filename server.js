@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT // || 3001;
-//const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
+const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
 
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
