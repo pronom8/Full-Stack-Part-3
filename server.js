@@ -3,9 +3,11 @@ import { promises as fs } from 'fs';
 import cors from 'cors';
 import morgan from 'morgan';
 import morganBody from 'morgan-body';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT // || 3001;
 
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
