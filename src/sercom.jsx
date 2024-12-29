@@ -1,10 +1,13 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 
-
-const baseUrl = import.meta.env.VITE_BASE_URL || '/api/persons';
+//const baseUrl = import.meta.env.VITE_BASE_URL || '/api/persons';
+const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
 
 const getAll = () => {
+  console.log(baseUrl)
   return axios.get(baseUrl).then(response => response.data);
 }
 

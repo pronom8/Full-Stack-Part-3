@@ -8,6 +8,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT // || 3001;
+//const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
 
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
@@ -131,5 +132,6 @@ app.get('/info', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}/api/persons`);
+    console.log("Here is the baseUrl: ", baseUrl)
+    //console.log(`Server running on http://localhost:${PORT}/api/persons`);
 });
