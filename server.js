@@ -26,7 +26,7 @@ const saveDataToFile = async (data) => {
     await fs.writeFile('db.json', JSON.stringify({ persons: data }, null, 2));
 };
 
-app.get(`${baseUrl}`, async (req, res) => {
+app.get('/api/persons', async (req, res) => {
     try {
         const persons = await getDataFromFile();
         res.json(persons);
@@ -35,7 +35,7 @@ app.get(`${baseUrl}`, async (req, res) => {
     }
 });
 
-app.get(`${baseUrl}/:id`, async (req, res) => {
+app.get('/api/persons/:id', async (req, res) => {
   try {
       const persons = await getDataFromFile();
       const id = parseInt(req.params.id);
@@ -52,7 +52,7 @@ app.get(`${baseUrl}/:id`, async (req, res) => {
 });
 
 
-app.post(`${baseUrl}`, async (req, res) => {
+app.post('/api/persons', async (req, res) => {
   try {
       const { name, number } = req.body;
 
@@ -90,7 +90,7 @@ app.post(`${baseUrl}`, async (req, res) => {
 
 
 
-app.delete(`${baseUrl}/:id`, async (req, res) => {
+app.delete('/api/persons/:id', async (req, res) => {
     try {
         let persons = await getDataFromFile();
         const id = req.params.id;
@@ -102,7 +102,7 @@ app.delete(`${baseUrl}/:id`, async (req, res) => {
     }
 });
 
-app.put(`${baseUrl}/:id`, async (req, res) => {
+app.put('/api/persons/:id', async (req, res) => {
     try {
         let persons = await getDataFromFile();
         const id = parseInt(req.params.id);
