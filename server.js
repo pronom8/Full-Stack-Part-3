@@ -94,7 +94,7 @@ app.post('/api/persons', async (req, res) => {
 app.delete('/api/persons/:id', async (req, res) => {
     try {
         let persons = await getDataFromFile();
-        const id = req.params.id;
+        const id = parseInt(req.params.id);
         persons = persons.filter(person => person.id !== id);
         await saveDataToFile(persons);
         res.status(204).end();

@@ -11,11 +11,6 @@
       "id": "2"
     },
     {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": "3"
-    },
-    {
       "name": "Mary Poppendieck",
       "number": "39-23-6423122",
       "id": "4"
@@ -74,26 +69,6 @@
       "id": 15,
       "name": "Le",
       "number": "123"
-    },
-    {
-      "id": 16,
-      "name": "Liisa",
-      "number": "02932 321921"
-    },
-    {
-      "id": 17,
-      "name": "Kello",
-      "number": "232313"
-    },
-    {
-      "id": 18,
-      "name": "Kekoa",
-      "number": "123213"
-    },
-    {
-      "id": 19,
-      "name": "OOna",
-      "number": "213213113"
     }
   ]
 }
