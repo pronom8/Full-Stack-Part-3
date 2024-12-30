@@ -18,7 +18,7 @@ const App = () => {
     sercom
       .getAll()
       .then(initialPersons => {
-        console.log('promise fulfilled');
+        console.log('promise fulfilleddd');
         setPersons(initialPersons);
       })
       .catch(error => {
@@ -83,7 +83,7 @@ const App = () => {
           setPersons(persons.concat(returnedPerson));
           setNewName('');
           setNewNumber('');
-          setSuccessMessage(`Added ${newName}`);
+          setSuccessMessage(`Addeddd ${newName}`);
           setTimeout(() => {
             setSuccessMessage('');
           }, 5000);
@@ -127,7 +127,7 @@ const App = () => {
         handleNumberChange={handleNumberChange}
         addPerson={addPerson}
       />
-      <PersonsList personsToShow={peopleToShow} setPersons={setPersons} persons={persons} handleDelete={handleDelete} />
+       <PersonsList personsToShow={peopleToShow} setPersons={setPersons} persons={persons} handleDelete={handleDelete} />
     </div>
   );
 };

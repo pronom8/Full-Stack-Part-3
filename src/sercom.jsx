@@ -8,20 +8,21 @@ const baseUrl = process.env.VITE_BASE_URL || '/api/persons';
 const api = '/api/persons';
 
 const getAll = () => {
-  console.log(api)
-  return axios.get(api).then(response => response.data);
+  console.log(baseUrl, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaatziiiiiiiiiiiiaaaaaaaaaaaaaaiaiaiaaaaaaaaaaaaa")
+  return axios.get(baseUrl).then(response => response.data);
 }
 
 const create = newObject => {
-  return axios.post(api, newObject).then(response => response.data);
+  return axios.post(baseUrl, newObject).then(response => response.data);
 }
 
 const remove = id => {
-    return axios.delete(`${api}/${id}`);
+    console.log("deletion doneee")
+    return axios.delete(`${baseUrl}/${id}`);
 }
 
 const update = (id, updatedObject) => {
-  return axios.put(`${api}/${id}`, updatedObject).then(response => response.data);
+  return axios.put(`${baseUrl}/${id}`, updatedObject).then(response => response.data);
 }
 
 export default { getAll, create, remove, update };
