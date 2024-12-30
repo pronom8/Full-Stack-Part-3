@@ -3,7 +3,7 @@
 #you wanted to make a request to it
 #press ctr + shift + P for opening all commands for rest client, also type rest first to the search field
 
-POST http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
