@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 //dotenv.config();
 
 
-//const baseUrl = import.meta.env.VITE_BASE_URL || '/api/persons';
-const baseUrl = '/api/persons';
+const baseUrl = import.meta.env.VITE_BASE_URL || '/api/persons';
+//const baseUrl = '/api/persons';
 const api = '/api/persons';
 
 const getAll = () => {
